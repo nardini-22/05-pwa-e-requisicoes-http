@@ -1,0 +1,150 @@
+:root {
+  --green: #01d26c;
+  --red: #ff5352;
+}
+
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.modalContainer {
+  position: relative;
+  max-width: 600px;
+  max-height: 275px;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin: 20px auto 0;
+  border-radius: 10px;
+}
+
+.header {
+  background: var(--green);
+  color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+.headerError {
+  background: var(--red);
+  color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 15px;
+}
+
+.exit {
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.iconError{
+    color: var(--red);
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iconContainer {
+    height: 40px;
+    width: 40px;
+    border: 5px solid var(--red);
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.iconContainerCheck {
+    height: 40px;
+    width: 40px;
+    border: 5px solid var(--green);
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.iconCheck{
+    color: var(--green);
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.animateBottom {
+  position: relative;
+  animation: animateBottom 0.4s;
+}
+
+@keyframes animateBottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-delay: 0.25s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0px);
+    timing-function: ease-in;
+  }
+  37% {
+    transform: translateX(5px);
+    timing-function: ease-out;
+  }
+  55% {
+    transform: translateX(-5px);
+    timing-function: ease-in;
+  }
+  73% {
+    transform: translateX(4px);
+    timing-function: ease-out;
+  }
+  82% {
+    transform: translateX(-4px);
+    timing-function: ease-in;
+  }
+  91% {
+    transform: translateX(2px);
+    timing-function: ease-out;
+  }
+}

@@ -1,0 +1,15 @@
+select {
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 2.5px;
+    width: 100%;
+    padding: 1rem;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: block;
+    position: relative;
+}
+
+select:focus{
+    outline: transparent;
+}
