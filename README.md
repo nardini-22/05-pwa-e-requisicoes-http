@@ -1,6 +1,6 @@
 # 05-pwa-e-requisicoes-http
 
-* O objetivo do projeto era desenvolver um pwa que consumisse uma API;
+* O objetivo do projeto era desenvolver um PWA que consumisse uma API;
 * O projeto foca em conversão de moedas de diferentes países, usando implementação com a API https://free.currencyconverterapi.com/;
 * Nesse projeto foi utilizado elevação de estado e componentes controlados;
 * Utilizei do modal para mostrar as informações, sem o auxílio de bibliotecas;
